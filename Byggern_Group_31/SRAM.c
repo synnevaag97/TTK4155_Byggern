@@ -10,7 +10,7 @@
 
 void SRAM_init(){
 	set_bit(MCUCR,SRE); // Setting SRE enables external SRAM with ALE, WR, RD. Override all other pin settings. Writing to zero disables. 
-	set_bit(EMCUCR, SRW00); // Wait one cycle
+	//set_bit(EMCUCR, SRW00); // Wait one cycle
 	set_bit(SFIOR,XMM2); // Mask out JTAG. PC4-PC7. 
 }
 

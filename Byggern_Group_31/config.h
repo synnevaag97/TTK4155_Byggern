@@ -13,6 +13,8 @@
 #define BAUD 9600
 #define UBRR F_CPU/16/BAUD-1
 
+
+
 #define set_bit(reg, bit) (reg |= (1 << bit))
 #define clear_bit(reg, bit) (reg &= ~(1 << bit))
 #define test_bit(reg, bit) (reg & (1 << bit))
@@ -23,7 +25,7 @@
 #include <avr/interrupt.h>
 #include <stdio.h>
 #include <util/delay.h>
-
+#include <stdbool.h>
 
 
 #endif /* CONFIG_H_ */

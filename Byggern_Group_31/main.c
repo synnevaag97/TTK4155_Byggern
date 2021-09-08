@@ -8,20 +8,20 @@
 //#include "config.h"
 #include "UART.h"
 #include "SRAM.h"
+#include "ADC.h"
 
 int main(void)
 {
 	UART_init();
 	SRAM_init();
+	ADC_init();
 	DDRA |= (1<<DDA0);
-	//unsigned int tall = 0;
-	while(1){
-		SRAM_test();
-		//SRAM_write(5,10);
-		//uint8_t data = SRAM_read(10);
-		//printf("SRAM read %4d\n", data);
-		//_delay_ms(1000);
+	for(unsigned int i = 0; i < 50;){
+		//SRAM_test();
+		ADC_write(80, 0);
+		uint8_t data = ADC_read(0);
+		printf("ADC read %4d\n", data);
+		_delay_ms(1000);
 	}
-	
-	return 0;
+		return 0;
 }

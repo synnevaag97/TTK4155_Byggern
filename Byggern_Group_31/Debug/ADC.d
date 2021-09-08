@@ -1,4 +1,4 @@
-SRAM.d SRAM.o: .././SRAM.c .././SRAM.h .././config.h \
+ADC.d ADC.o: .././ADC.c .././ADC.h .././config.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h \
@@ -19,7 +19,7 @@ SRAM.d SRAM.o: .././SRAM.c .././SRAM.h .././config.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h
 
-.././SRAM.h:
+.././ADC.h:
 
 .././config.h:
 
